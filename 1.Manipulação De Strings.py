@@ -1,0 +1,17 @@
+import time
+print('\033[36m-=' * 19)
+print('Vamos Manipular Strings.')
+print('\033[36m-=' * 19)
+frase = str(input('Digite uma frase:'))
+print('PROCESSANDO...')
+time.sleep(3)
+print('A frase tem {} caracteres.'.format(len(frase)-frase.count(' ')))
+print('Sua frase em maiúsculas: {}.'.format(frase.upper()))
+print('Sua frase em minúsculas: {}.'.format(frase.lower()))
+print('Em título: {}'.format(frase.title()))
+print('Separado: {}'.format(frase.split()))
+print('Junção com traços: {}.'.format('-'.join(frase.split(' '))))
+print('A primeira letra maiúscula: {}.'.format(frase.lower().capitalize()))
+print('Troca-troca: {}.'.format(frase.swapcase()))
+print('\033[33mBYE BYE!!!')
+
